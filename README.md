@@ -22,4 +22,4 @@ Users can explore songs, play tracks, and enjoy a music player interface.
 
 ---
 
-## 📂 Project Structure
+
