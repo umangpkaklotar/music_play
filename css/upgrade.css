@@ -1,0 +1,514 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    /* background: linear-gradient(90deg, #000000 0%, #2b0a3d 100%); */
+    padding: 0;
+    margin: 0;
+}
+
+.main-content {
+    min-height: 66vh;
+    padding: 70px 30px 40px;
+    text-align: center;
+    /* background: linear-gradient(90deg, #000 0%, #2c0e41 100%); */
+    background-image: url('./bc.webp');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    max-width: 900px;
+    line-height: 1.4;
+}
+
+.subtext {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.premium-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #2c9cf5;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.premium-btn:hover {
+    background: #1a7cd1;
+}
+
+.plan-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.plan-text a {
+    color: #6cb4ff;
+    text-decoration: none;
+}
+
+.plan-text a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: black;
+}
+
+.header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header a {
+    margin-left: -15%;
+    margin-bottom: -2.5px;
+
+}
+
+.header .profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -310px;
+    width: 250px;
+    height: 100%;
+    background: #1f1f1f;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar li {
+    margin-top: 20px o;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 14px;
+}
+
+.sidebar li:hover {
+    color: #1db954;
+}
+
+.ri-play-list-line:hover {
+    color: #1db954;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+
+
+/* Optional: Overlay for sidebar */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+#searchInput {
+    width: 46vw;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+}
+
+#searchInput {
+    width: 46vw;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-header i {
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* section 1 */
+.features-section {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.feature {
+    width: 250px;
+    text-align: center;
+}
+
+.feature img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #dcdcdc;
+    line-height: 1.5;
+}
+
+/* scetion 2 ============= */
+.pricing-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 25px;
+    width: 260px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.pricing-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.sub {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.note {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.note a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0d8bf2;
+}
+
+.footer-note h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-note p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* section 3 ============== */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px;
+    gap: 50px;
+    background-color: #0e0e0e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.top-text {
+    max-width: 800px;
+    text-align: center;
+    margin-right: 40%;
+}
+
+.top-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.top-text p {
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 1.5;
+    margin-right: 9%;
+}
+
+.playlist-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.playlist-images img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 495px;
+    margin-top: -32%;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.phone-mockup img {
+    width: 40vw;
+    border-radius: 30px;
+    height: 70vh;
+}
+
+.text-content {
+    max-width: 400px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 15px;
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .phone-mockup img {
+        width: 220px;
+    }
+
+    .text-content h2 {
+        text-align: center;
+    }
+
+    .text-content p {
+        text-align: center;
+    }
+}
+
+/* scetion 4 ============= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e;
+    color: white;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 16px;
+}
+
+.faq-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.faq-item {
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 15px;
+    display: none;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-toggle {
+    font-size: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-footer {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #999;
+}
+
+.faq-footer a {
+    color: #3ea6ff;
+    text-decoration: none;
+}
+
+.faq-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .faq-section {
+        padding: 30px 20px;
+    }
+
+    .faq-section h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
