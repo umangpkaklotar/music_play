@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+#player {
+    margin-bottom: 20px;
+}
+#songList {
+    list-style: none;
+    padding: 0;
+}
+#songList li {
+    cursor: pointer;
+    margin: 5px 0;
+}
